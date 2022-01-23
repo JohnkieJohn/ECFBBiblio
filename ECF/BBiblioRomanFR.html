@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catégorie: Meilleur roman français</title>
+
+        <!-- CSS Stylesheet -->
+
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <form id="myForm">
+            <h1>Tableau de notation pour la catégorie: Meilleur roman français</h1>
+            <div class="column">
+                <h3>Œuvres</h3>
+                <select class="menuSelect">
+                    <option class="options">-</option>
+                    <option class="options">Œuvre 1 - Meilleur roman français</option>
+                    <option class="options">Œuvre 2 - Meilleur roman français</option>
+                    <option class="options">Œuvre 3 - Meilleur roman français</option>
+                </select>
+            </div>
+            <div class="column">
+                <h3>Télécharger PDF</h3>
+                <div class="pdfLink"></div>
+                <div class="pdfLink"></div>
+                <div class="pdfLink"></div>
+            </div>
+            <div class="column">
+                <h3>Style /10</h3>
+                <input type="number" name="style" value=0 min=0 max=10 disabled>
+            </div>
+            <div class="column">
+                <h3>Illustrations /10</h3>
+                <input type="number" name="illu" value=0 min=0 max=10 disabled>
+            </div>
+            <div class="column">
+                <h3>Mise en page /10</h3>
+                <input type="number" name="miseEnPage" value=0 min=0 max=10 disabled>
+            </div>
+            <div class="column">
+                <h3>Émotion /10</h3>
+                <input type="number" name="emotion" value=0 min=0 max=10 disabled>
+            </div>
+            <div class="column">
+                <h3>Moyenne /10</h3>
+                <input type="number" name="moyenne" value=0 disabled>
+            </div>
+            <button type="button" id="addLine" class="line">+</button>
+            <button type="button" id="removeLine" class="line" disabled>-</button>
+            <button id="reinitAll" class="line">Tout réinitialiser</button>
+        </form>
+
+        <!-- JavaScript File(s)-->
+
+        <script src="JS/tableauNotation.js"></script> 
+    </body>
+</html>

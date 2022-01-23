@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Profil juré</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">	
+			<header>
+                <form>
+                    <div class="logoProfil">
+                        <div id="profil"><a title="Profil juré" href="BBiblioProfilJure.html">Profil juré</a></div>
+                        <a href="BBiblioIndex.html"><img src="images/logo.jpg" alt="logo"></a>
+                        <button type="button" id="signIn" hidden>Sign in</button>
+                        <p id="link"></p>  
+                    </div>
+                </form>
+			</header>
+            <nav>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Historique du prix
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="BBiblioHistorique.html">Kelly Tipof <span>"I love my kebab in NaN bread"</span> - Roman étranger</a>
+                            <a href="BBiblioHistorique.html">Guy Teub <span>"Quand je suis content, je commit"</span> - Biographie</a>
+                            <a href="BBiblioHistorique.html">Françoise Jiaisse <span>"Tendue comme une chaîne de caractère"</span> - Roman français</a>
+                            <a href="BBiblioHistorique.html">Philippe Chtemeule <span>"L'attribut de Dana"</span> - Documentaire</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="profilJure">
+                <div class="infosProfilJ">
+                    <form id="infosJ">
+                        <p><span id="msginfoJ">Profil juré</span></p>
+                        <p><label for="nom2" id="nom2">Votre nom: </label>
+                        <input type="text" name="nom2"></p>
+                        <p><label for="prenom2" id="prenom2">Votre prénom: </label>
+                        <input type="text" name="prenom2"></p>
+                        <p><label for="year2" id="year2">Votre année de naissance: </label>
+                        <input type="number" name="year" min=1900 max=2022 maxlength=4 minlength=4></p>
+                        <p id="jurecat">Choisissez votre ou vos catégorie(s): </p>
+                        <p><label for="cat1" id="cat1">Meilleur roman français</label>
+                        <input type="checkbox" name="cat" value="Meilleur roman français"></p>
+                        <p><label for="cat2" id="cat2">Meilleur roman étranger</label>
+                        <input type="checkbox" name="cat" value="Meilleur roman étranger"></p>
+                        <p><label for="cat3" id="cat3">Meilleur documentaire</label>
+                        <input type="checkbox" name="cat" value="Meilleur documentaire"></p>
+                        <p><label for ="cat4" id="cat4">Meilleure biographie</label>
+                        <input type="checkbox" name="cat" value="Meilleure biographie"></p>
+                        <p><label for="newmdp" id="mdplabel" >Nouveau mot de passe : </label>
+                        <input type="password" name="newmdp" title="Majuscule(s), minuscule(s), au moins un chiffre, 10 caractères minimum"></p>
+                        <p><button type="button" id="infosJure">Valider les informations</button><button>Réinitialiser</button></p>
+                    </form>
+                </div>
+                <div class="recapOeuvre">
+                    <p id="tabCat" hidden>Tableau(x) de notation selon vos catégories :</p>
+                    <p><a href="BBiblioRomanFR.html" class="catTab" target="_blank" hidden>Meilleur roman français</a></p>
+                    <p><a href="BBiblioRomanET.html" class="catTab" target="_blank" hidden>Meilleur roman étranger</a></p>
+                    <p><a href="BBiblioDoc.html" class="catTab" target="_blank" hidden>Meilleur documentaire</a></p>
+                    <p><a href="BBiblioBio.html" class="catTab" target="_blank" hidden>Meilleur biographie</a></p>
+                </div>
+            </section>
+            <footer>
+                <p>© 2022 Prix BBiblio</p>
+                <img src="images\logo.jpg" alt="logo" class="logoBottom">
+                <div class="social">
+					<a href="https://www.google.fr/"><img src="images/fbicone.png" alt="icône facebook"></a>
+					<a href="https://www.google.fr/"><img src="images/yticone.png" alt="icône youtube"></a>
+					<a href="https://www.google.fr/"><img src="images/twittericone.png" alt="icône twitter"></a>
+					<a href="https://www.google.fr/"><img src="images/flickricone.png" alt="icône flickr"></a>
+				</div>
+                <input type="text" id="mail" placeholder="johndoe@yahoo.com" hidden>
+                <button type="button" id="jure" hidden>M'inscrire comme juré</button><button type="button" id="auteur" hidden>M'inscrire comme auteur/éditeur</button>
+                <p><button type="button" id="infosAuteur" hidden>Valider les informations</button>
+                <button type="button" id="addOeuvre" disabled hidden>Déposer</button>
+            </footer>
+        </div>
+        <script src="JS/BBiblio.js"></script>
+    </body>
+</html>

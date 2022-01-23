@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Profil auteur/éditeur</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">	
+			<header>
+                <form>
+                    <div class="logoProfil">
+                        <div id="profil"><a title="Profil auteur" href="BBiblioProfilAuteur.html">Profil auteur</a></div>
+                        <a href="BBiblioIndex.html"><img src="images/logo.jpg" alt="logo"></a>
+                        <button type="button" id="signIn" hidden>Sign in</button>
+                        <p id="link"></p>   
+                    </div>
+                </form>
+			</header>
+            <nav>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Historique du prix
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="BBiblioHistorique.html">Kelly Tipof <span>"I love my kebab in NaN bread"</span> - Roman étranger</a>
+                            <a href="BBiblioHistorique.html">Guy Teub <span>"Quand je suis content, je commit"</span> - Biographie</a>
+                            <a href="BBiblioHistorique.html">Françoise Jiaisse <span>"Tendue comme une chaîne de caractère"</span> - Roman français</a>
+                            <a href="BBiblioHistorique.html">Philippe Chtemeule <span>"L'attribut de Dana"</span> - Documentaire</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="profilAuteur">
+                <div class="infosProfilA">
+                    <form id="infosA">
+                        <p><span id="msginfoA">Profil auteur/éditeur</span></p>
+                        <p><label for="nom" id="nom">Votre nom : </label>
+                        <input type="text" name="nom"></p>
+                        <p><label for="prenom" id="prenom">Votre prénom : </label>
+                        <input type="text" name="prenom"></p>
+                        <p><label for="year" id="year">Votre année de naissance : </label>
+                        <input type="number" name="year" min=1900 max=2022 maxlength="4" minlength="4"></p>
+                        <p><input type="radio" name="autedit" value="Auteur">
+                        <label for="auteur" id="auteur">Auteur</label>
+                        <input type="radio" name="autedit" value="Éditeur">
+                        <label for="editeur" id="editeur">Éditeur</label></p>
+                        <p><label for="newmdp" id="mdplabel" >Nouveau mot de passe : </label>
+                        <input type="password" name="newmdp" title="Majuscule(s), minuscule(s), au moins un chiffre, 10 caractères minimum"></p>
+                        <p><button type="button" id="infosAuteur">Valider les informations</button><button>Réinitialiser</button></p>
+                    </form>
+                </div>
+                <div class="depot">
+                    <form id="depotOeuvre">
+                        <p><span id="msginfoA2">-Déposer une oeuvre-</span></p>
+                        <p><label for="titre" id="titre">Titre: </label>
+                        <input type="text" name="titre" disabled></p>
+                        <p><label for="auteur" id="auteurD">Auteur: </label>
+                        <input type="text" name="auteur" disabled></p>
+                        <select name="categorieDepot" id="categorieDepot" disabled>
+                            <option>-Catégorie concourue-</option>
+                            <option value="Meilleur roman français">Meilleur roman français</option>
+                            <option value="Meilleur roman étranger">Meilleur roman étranger</option>
+                            <option value="Meilleur documentaire">Meilleur documentaire</option>
+                            <option value="Meilleur biographie">Meilleur biographie</option>
+                        </select>
+                        <p><input type="file" accept="application/pdf" name="pdf" id="chooseFile" disabled></p>
+                        <button type="button" id="addOeuvre" disabled>Déposer</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <p>© 2022 Prix BBiblio</p>
+                <img src="images\logo.jpg" alt="logo" class="logoBottom">
+                <div class="social">
+					<a href="https://www.google.fr/"><img src="images/fbicone.png" alt="icône facebook"></a>
+					<a href="https://www.google.fr/"><img src="images/yticone.png" alt="icône youtube"></a>
+					<a href="https://www.google.fr/"><img src="images/twittericone.png" alt="icône twitter"></a>
+					<a href="https://www.google.fr/"><img src="images/flickricone.png" alt="icône flickr"></a>
+				</div>
+                <input type="text" id="mail" placeholder="johndoe@yahoo.com" hidden>
+                <button type="button" id="jure" hidden>M'inscrire comme juré</button><button type="button" id="auteur" hidden>M'inscrire comme auteur/éditeur</button>
+                <button type="button" id="infosJure" hidden>Valider les informations</button>
+            </footer>
+        </div>
+        <script src="JS/BBiblio.js"></script>
+    </body>
+</html>

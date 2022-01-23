@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Prix BBiblio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">	
+			<header>
+                <form>
+                    <div class="logoProfil">
+                        <div id="profil"></div>
+                        <a href="BBiblioIndex.html"><img src="images/logo.jpg" alt="logo"></a>
+                        <button type="button" id="signIn">Sign in</button>
+                        <input type="password" id="mdp" placeholder="Password">
+                        <input type="text" id="login" placeholder="Login">
+                        <p id="link"></p>
+                    </div>
+                </form>
+			</header>
+            <nav>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Historique du prix
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="BBiblioHistorique.html">Kelly Tipof <span>"I love my kebab in NaN bread"</span> - Roman étranger</a>
+                            <a href="BBiblioHistorique.html">Guy Teub <span>"Quand je suis content, je commit"</span> - Biographie</a>
+                            <a href="BBiblioHistorique.html">Françoise Jiaisse <span>"Tendue comme une chaîne de caractère"</span> - Roman français</a>
+                            <a href="BBiblioHistorique.html">Philippe Chtemeule <span>"L'attribut de Dana"</span> - Documentaire</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>   
+            <section class="section1">
+                <div class="rule">
+                    <h1>Règlement de participation</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie lacus ac risus auctor, ornare venenatis leo porttitor. Curabitur consectetur euismod tortor, ac accumsan odio
+                        eleifend ac. Pellentesque elementum dui nec eros iaculis mattis. Quisque mollis ante vestibulum diam fermentum fermentum. Mauris nec mauris risus. Nulla elit nibh, vehicula et magna
+                        sit amet, facilisis rutrum turpis. Nam ut vestibulum risus. Vestibulum purus est, consectetur vel augue non, molestie interdum eros. Maecenas cursus velit et orci pretium consectetur.
+                        Vivamus pulvinar, turpis mollis tempor maximus, metus odio tempor nisi, quis luctus ipsum massa sit amet odio. Duis rutrum dolor tristique laoreet sollicitudin. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis efficitur magna. In egestas erat a quam rhoncus scelerisque.
+                    </p>
+                </div>
+            </section>
+            <section class="section2">
+                <img src="images/bookshelf.jpg" alt="image de rangée de livres">
+            </section>
+            <section class="section3">
+                <div class="inscript">
+                    <p id="confirm">Vous souhaitez vous inscrire en tant que juré ou auteur/éditeur ?</p>
+                    <form>
+                        <input type="text" id="mail" placeholder="johndoe@yahoo.com">
+                        <p>
+                            <button type="button" id="jure">M'inscrire comme juré</button><button type="button" id="auteur">M'inscrire comme auteur/éditeur</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <p>© 2022 Prix BBiblio</p>
+                <img src="images/logo.jpg" alt="logo" class="logoBottom">
+                <div class="social">
+					<a href="https://www.google.fr/"><img src="images/fbicone.png" alt="icône facebook"></a>
+					<a href="https://www.google.fr/"><img src="images/yticone.png" alt="icône youtube"></a>
+					<a href="https://www.google.fr/"><img src="images/twittericone.png" alt="icône twitter"></a>
+					<a href="https://www.google.fr/"><img src="images/flickricone.png" alt="icône flickr"></a>
+				</div>
+                <button type="button" id="infosAuteur" hidden>Valider les informations</button>
+                <button type="button" id="addOeuvre" disabled hidden>Déposer</button>
+                <button type="button" id="infosJure" hidden>Valider les informations</button>
+            </footer>
+        </div>
+        <script src="JS/BBiblio.js"></script>
+    </body>
+</html>

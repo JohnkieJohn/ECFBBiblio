@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Historique BBiblio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	</head>
+	<body>
+		<div class="wrapper">	
+			<header>
+                <form>
+                    <div class="logoProfil">
+                        <a href="BBiblioIndex.html"><img src="images/logo.jpg" alt="logo"></a>
+                        <button type="button" id="signIn">Sign in</button>
+                        <input type="password" id="mdp" placeholder="Password">
+                        <input type="text" id="login" placeholder="Login">
+                        <p id="link"></p>  
+                    </div>
+                </form>
+			</header>
+            <nav>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Historique du prix
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="BBiblioHistorique.html">Kelly Tipof <span>"I love my kebab in NaN bread"</span> - Roman étranger</a>
+                            <a href="BBiblioHistorique.html">Guy Teub <span>"Quand je suis content, je commit"</span> - Biographie</a>
+                            <a href="BBiblioHistorique.html">Françoise Jiaisse <span>"Tendue comme une chaîne de caractère"</span> - Roman français</a>
+                            <a href="BBiblioHistorique.html">Philippe Chtemeule <span>"L'attribut de Dana"</span> - Documentaire</a>
+                        </div>
+                    </div>
+                </div>
+            </nav> 
+            <section class="historique">
+                <div class="module1">
+                    <img src="images/livre.jpg">
+                    <h1>Auteur + "Titre"</h1>
+                    <p>
+                        Integer placerat id felis quis blandit. Maecenas malesuada rutrum vehicula. Mauris varius ex ligula, ut porttitor massa mattis nec. Nulla ac accumsan elit, vitae sodales nisl.
+                        Fusce leo lectus, sollicitudin vitae dapibus sit amet, consectetur eu eros. Sed at tellus vel sem mollis sollicitudin ac non ante. Nam dapibus ante quis consectetur consectetur.
+                        Duis eget egestas eros. Nunc auctor ex vitae tortor pretium tempus. Quisque sit amet magna dictum, imperdiet justo vitae, dapibus dui. Integer viverra pulvinar ligula, sed feugiat
+                        ligula malesuada nec. Ut augue nulla, iaculis non erat vel, bibendum posuere metus. Donec mauris velit, hendrerit eu neque in, lacinia scelerisque turpis. Sed mollis augue non velit
+                        interdum, a dictum odio efficitur. Cras non rutrum leo. Phasellus sit amet luctus leo. Phasellus pulvinar magna vitae mauris aliquam dapibus. Nunc rhoncus hendrerit condimentum. 
+                        Donec ac purus vitae ex auctor facilisis. Curabitur feugiat nisi at libero pellentesque sagittis. Nam vel placerat ex. Proin egestas, justo in pellentesque facilisis, metus arcu 
+                        dignissim neque, eget pulvinar eros ligula at ex. Aliquam eget pretium eros. Aenean ultricies mauris ac ante ultrices, sed fermentum metus efficitur. 
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <div class="resume">
+                    <p>
+                        Nam efficitur velit sed ipsum fringilla fermentum ac id mauris. Vivamus venenatis, dui quis malesuada feugiat, elit metus mattis lacus, vel vehicula ligula felis sed quam. Praesent 
+                        placerat sit amet magna bibendum maximus. Nulla mollis tortor ac lectus porttitor laoreet. Nullam eu enim dictum, luctus erat a, finibus tortor. Mauris vel arcu pretium, fringilla sapien 
+                        eget, malesuada felis. Duis eu bibendum magna. Sed pellentesque congue ultrices. Sed tincidunt nunc vel lacinia consectetur. Cras sit amet est massa. Etiam gravida scelerisque augue vitae 
+                        posuere. Maecenas ut varius arcu. Aliquam sapien nibh, egestas at odio et, auctor cursus nulla.
+                    </p>
+                </div>
+                <a target="_blank"nrel="noopener noreferrer" href="https://www.amazon.fr/Comment-chier-dans-bois-environnementale/dp/2913031161">->Commander sur notre boutique partenaire</a>
+            </section>
+            <footer>
+                <p>© 2022 Prix BBiblio</p>
+                <img src="images\logo.jpg" alt="logo" class="logoBottom">
+                <div class="social">
+					<a href="https://www.google.fr/"><img src="images/fbicone.png" alt="icône facebook"></a>
+					<a href="https://www.google.fr/"><img src="images/yticone.png" alt="icône youtube"></a>
+					<a href="https://www.google.fr/"><img src="images/twittericone.png" alt="icône twitter"></a>
+					<a href="https://www.google.fr/"><img src="images/flickricone.png" alt="icône flickr"></a>
+				</div>
+                <input type="text" id="mail" placeholder="johndoe@yahoo.com" hidden>
+                <button type="button" id="jure" hidden>M'inscrire comme juré</button><button type="button" id="auteur" hidden>M'inscrire comme auteur/éditeur</button>
+                <button type="button" id="infosAuteur" hidden>Valider les informations</button>
+            </footer>
+        </div>
+        <script src="JS/BBiblio.js"></script>
+    </body>
+</html>
